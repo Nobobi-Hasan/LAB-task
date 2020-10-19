@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Arosh\\Desktop\\OOP2\\lab\\lab2\\lab2\\lab2\\lab2.csproj": {}
+    "C:\\Users\\Arosh\\Desktop\\OOP2\\lab\\lab2\\lab2\\lab2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Arosh\\Desktop\\OOP2\\lab\\lab2\\lab2\\lab2\\lab2.csproj": {
+    "C:\\Users\\Arosh\\Desktop\\OOP2\\lab\\lab2\\lab2\\lab2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Arosh\\Desktop\\OOP2\\lab\\lab2\\lab2\\lab2\\lab2.csproj",
+        "projectUniqueName": "C:\\Users\\Arosh\\Desktop\\OOP2\\lab\\lab2\\lab2\\lab2.csproj",
         "projectName": "lab2",
-        "projectPath": "C:\\Users\\Arosh\\Desktop\\OOP2\\lab\\lab2\\lab2\\lab2\\lab2.csproj",
+        "projectPath": "C:\\Users\\Arosh\\Desktop\\OOP2\\lab\\lab2\\lab2\\lab2.csproj",
         "packagesPath": "C:\\Users\\Arosh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Arosh\\Desktop\\OOP2\\lab\\lab2\\lab2\\lab2\\obj\\",
+        "outputPath": "C:\\Users\\Arosh\\Desktop\\OOP2\\lab\\lab2\\lab2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Arosh\\AppData\\Roaming\\NuGet\\NuGet.Config",
