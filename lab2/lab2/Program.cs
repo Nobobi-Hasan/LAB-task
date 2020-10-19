@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.InteropServices.ComTypes;
 
 namespace lab2
 {
@@ -25,14 +24,22 @@ namespace lab2
 
             //ques 2---------------------------------------
 
-            /*for (int i = 1; i <=4; i++)
+            /*int x = 0;
+            for (int i = 0; i< 4; i++)
             {
-                for (int j = 1;  j<= 3; j++)
+                for (int j = 0; j <= 5; j++)
                 {
-                    Console.Write("XO");
-
+                    x = i + j;
+                    if (x % 2 == 0)
+                    {
+                        Console.Write("X");
+                    }
+                    else
+                    {
+                        Console.Write("0");
+                    }
                 }
-                Console.WriteLine("");
+                Console.WriteLine();
             }*/
 
             //ques 3---------------------------------------
@@ -44,6 +51,7 @@ namespace lab2
                     Console.Write(j);
 
                 }
+                Console.WriteLine();
             }*/
 
             //ques 4---------------------------------------
@@ -72,9 +80,37 @@ namespace lab2
             }
             Console.WriteLine("Sum of Even:" + b);*/
 
+            //ques 5---------------------------------------
+
+            /*for (int i = -1; i <= 3; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write(" ");
+                }
+                Console.WriteLine(i+2);
+            }*/
+
+            //ques 6---------------------------------------
+
+            int x = 5;
+
+            Console.Write("Factorial of " + x + " is ");
+            for (int i = 1; i <= x; i++)
+            {
+                int j = i;
+                Console.Write(j);
+
+                if (i != x)
+                {
+                    Console.Write("*");
+                }
+
+            }
+
             //ques 7---------------------------------------
 
-            for (int i = 0; i < 5; i++)
+            /*for (int i = 0; i < 5; i++)
             {
                 for(int j=0; j<=i; j++)
                 {
@@ -91,7 +127,7 @@ namespace lab2
                     Console.Write("*");
                 }
                 Console.WriteLine("");
-            }
+            }*/
 
 
         }
