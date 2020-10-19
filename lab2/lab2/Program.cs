@@ -93,7 +93,6 @@ namespace lab2
                 Console.WriteLine("");
             }
 
-            //ques 6---------------------------------------
 
         }
     }
