@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace lab2
 {
@@ -71,15 +72,25 @@ namespace lab2
             }
             Console.WriteLine("Sum of Even:" + b);*/
 
-            //ques 5---------------------------------------
+            //ques 7---------------------------------------
 
-            for (int i = 1; i <= 5; i++)
+            for (int i = 0; i < 5; i++)
             {
-                for (int j = i; j < i + 5; j++)
+                for(int j=0; j<=i; j++)
                 {
-                    Console.Write(j);
-
+                    Console.Write("*");
                 }
+                Console.WriteLine("");
+            }
+
+
+            for (int k = 5; k >=0; k--)
+            {
+                for (int l = k; l >= 0; l--)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("");
             }
 
             //ques 6---------------------------------------
