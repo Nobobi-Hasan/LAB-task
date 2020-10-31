@@ -93,19 +93,22 @@ namespace lab2
 
             //ques 6---------------------------------------
 
-            int x = 5;
-
-            Console.Write("Factorial of " + x + " is ");
-            for (int i = 1; i <= x; i++)
             {
-                int j = i;
-                Console.Write(j);
-
-                if (i != x)
+                int i;
+                int b = 8, a = 32;
+                for (i = 0; i <= 10; i++)
                 {
-                    Console.Write("*");
+                    if ((a / b * 2) == 2)
+                    {
+                        Console.WriteLine(i + " ");
+                        continue;
+                    }
+                    else if (i != 4)
+                        Console.Write(i + " ");
+                    else
+                        break;
                 }
-
+                Console.ReadLine();
             }
 
             //ques 7---------------------------------------
