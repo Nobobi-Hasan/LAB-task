@@ -27,8 +27,8 @@ namespace lab3
             a.Acid = "n-73";
             a.Balance = 70000;
             a.ShowInfo();
-            a.Deposit(5000);
-            a.Withdraw(3000);
+            a.Deposit(15000);
+            a.Withdraw(23000);
             Console.WriteLine("----------------------------- ");
 
             Course c = new Course();
