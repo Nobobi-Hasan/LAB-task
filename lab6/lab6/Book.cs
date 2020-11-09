@@ -39,7 +39,7 @@ namespace lab6
             set { bookType = value; }
         }
 
-        private int bookCopy;
+        public int bookCopy;
 
         public int BookCopy
         {
@@ -60,8 +60,11 @@ namespace lab6
             bookCopy += x;
         }
 
+
+
         public Book()
-        { }
+        { 
+        }
 
         public Book(string bookName, string bookAuthor, string bookId, string bookType, int bookCopy)
         {
@@ -71,9 +74,6 @@ namespace lab6
             this.bookType = bookType;
             this.bookCopy = bookCopy;
         }
-
-
-
 
     }
 }

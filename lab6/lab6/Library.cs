@@ -24,7 +24,7 @@ namespace lab6
 
         private Book[] listOfBook;
 
-        public Book[] ListOfBook
+       public Book[] ListOfBook
         {
             get { return listOfBook; }
             set { listOfBook = value; }
@@ -40,12 +40,12 @@ namespace lab6
             set { totalBook = value; }
         }
 
-        private Book[] books;
 
-        public Book[] Books
+        private int bookCount;
+        public int BookCount
         {
-            get { return books; }
-            set { books = value; }
+            get { return bookCount; }
+            set { bookCount = value; } 
         }
 
         private Account[] lAccount;
@@ -58,13 +58,13 @@ namespace lab6
 
         public Library()
         {
-            books = new Book[50000];
+            listOfBook = new Book[50000];
             lAccount =new Account[1];
         }
 
         public Library(string libName, string libAddress, int totalBook)
         {
-            books = new Book[50000];
+            listOfBook = new Book[50000];
             lAccount = new Account[1];
             this.libName = libName;
             this.libAddress = libAddress;
@@ -77,20 +77,43 @@ namespace lab6
             Console.WriteLine("Library Name: " + libName);
             Console.WriteLine("Library Address: " + libAddress);
             Console.WriteLine("Total books: " + totalBook);
+            Console.WriteLine(bookCount);
         }
 
         public void ShowAllBooks()
         {
-            for(int i=0; i< books[].length(); i++ )
+            Console.WriteLine("Book ount: " + bookCount);
+            for (int i=0; i< bookCount; i++)
             {
-                books[i].ShowInfo();
+                Console.WriteLine("---------------------------------------------");
+                Console.WriteLine("Book "+(i+1)+" in library:");
+                Console.WriteLine("Book Name: " + listOfBook[i].BookName);
+                Console.WriteLine("Book Author: " + listOfBook[i].BookAuthor);
+                Console.WriteLine("Book Id: " + listOfBook[i].BookId);
+                Console.WriteLine("Book Type: " + listOfBook[i].BookType);
+                Console.WriteLine("Book Copy: " + listOfBook[i].BookCopy);
+                Console.WriteLine(" "); 
             }
-            
         }
 
         public void AddNewBook(Book book)
         {
-            
+            listOfBook[bookCount++] = book;
         }
+
+        public void DeleteBook(Book book)
+        {
+            listOfBook[bookCount--] = book;
+        }
+
+        public void AddNewBookCopy(Book book, int copy)
+
+        {
+            Console.WriteLine(copy + " books added to "+ book.BookName);
+            book.AddBookCopy(copy); 
+        }
+
+
+
     }
 }

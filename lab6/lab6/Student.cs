@@ -38,14 +38,29 @@ namespace lab6
             set { cgpa = value; }
         }
 
-        private Account accounts;
+        private Account[] sAccount;
 
-        public Account Accounts
+        public Account[] SAccount
         {
-            get { return accounts; }
-            set { accounts = value; }
+            get { return sAccount; }
+            set { sAccount = value; }
         }
 
+
+
+        public Student()
+        {
+            sAccount = new Account[1];
+        }
+
+        public Student(string name, string id, string department, float cgpa)
+        {
+            this.name = name;
+            this.id = id;
+            this.department = department;
+            this.cgpa = cgpa;
+            sAccount = new Account[1];
+        }
 
         public void ShowInfo()
         {
