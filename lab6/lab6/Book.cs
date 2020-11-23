@@ -60,6 +60,10 @@ namespace lab6
             bookCopy += x;
         }
 
+        public void RemoveBookCopy(int x)
+        {
+            bookCopy -= x;
+        }
 
 
         public Book()

@@ -10,6 +10,10 @@ namespace lab6
             s.ShowInfo();
             Console.WriteLine("----------------------------- ");
 
+            Student r = new Student("Ratin", "18-38737-3", "CSE", 2.82f);
+            r.ShowInfo();
+            Console.WriteLine("----------------------------- ");
+
             Book b = new Book("Tin Goenda", "Qazi Anwar Hussain", "3-b1", "spy-thriller", 25);
             b.ShowInfo();
             Console.WriteLine("----------------------------- ");
@@ -45,6 +49,11 @@ namespace lab6
             l.AddNewBookCopy(b2,77);
             l.ShowAllBooks();
 
+            s.BorrowBook(b,2,"Shatin");
+            r.BorrowBook(b2,3, "Ratin");
+            l.ShowAllBooks();
+            s.ShowBorrowedBooks();
+            r.ShowBorrowedBooks();
         }
     }
 }
