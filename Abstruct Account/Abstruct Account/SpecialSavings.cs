@@ -23,6 +23,22 @@ namespace Abstruct_Account
             set { transCount = value; }
         }
 
+        private double openingBalance;
+
+        public double OpeningBalance
+        {
+            get { return openingBalance; }
+            set { openingBalance = value; }
+        }
+
+        private int depositeCount;
+
+        public int DepositeCount
+        {
+            get { return depositeCount; }
+            set { depositeCount = value; }
+        }
+
 
         public SpecialSavings()
         {
@@ -32,6 +48,14 @@ namespace Abstruct_Account
         public SpecialSavings(string accName, string accNo, double balance, int transactionNo) : base(accName, accNo, balance)
         {
             this.transactionNo = transactionNo;
+            DepositeCount++;
+            depositeCount++;
+            if (depositeCount == 1)
+            {
+                OpeningBalance = balance;
+
+            }
+            OpeningBalance = balance;
         }
 
         public override void Withdraw(double amount)
@@ -40,6 +64,7 @@ namespace Abstruct_Account
             if ((transCount <= transactionNo) && (Balance - amount >= (OpeningBalance/5)))
             {
                 Balance -= amount;
+                Console.WriteLine("Special Savings Account withdraw successfull..");
             }
             else
             {

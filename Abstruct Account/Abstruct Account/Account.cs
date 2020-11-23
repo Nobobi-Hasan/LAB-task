@@ -31,6 +31,12 @@ namespace Abstruct_Account
             set { balance = value; }
         }
 
+        
+
+        
+
+
+
         public Account()
         {
 
@@ -45,10 +51,20 @@ namespace Abstruct_Account
 
         public void Deposite(double ammount)
         {
+
             balance += ammount;
+            
+
         }
 
-        abstract public void Withdraw();
+        abstract public void Withdraw(double ammount);
+
+        virtual public void ShowInfo()
+        {
+            Console.WriteLine("Acc Name: " + accName);
+            Console.WriteLine("Acc No: " + accNo);
+            Console.WriteLine("Balance: " + balance);
+        }
 
     }
 }

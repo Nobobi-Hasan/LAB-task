@@ -39,6 +39,7 @@ namespace Abstruct_Account
             if (transCount<=transactionNo && Balance - amount >= 500)
             {
                 Balance -= amount;
+                Console.WriteLine("Savings Account withdraw successfull..");
             }
             else
             {
