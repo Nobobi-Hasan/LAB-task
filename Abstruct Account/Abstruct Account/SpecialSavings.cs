@@ -49,7 +49,6 @@ namespace Abstruct_Account
         {
             this.transactionNo = transactionNo;
             DepositeCount++;
-            depositeCount++;
             if (depositeCount == 1)
             {
                 OpeningBalance = balance;
