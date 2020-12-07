@@ -16,7 +16,7 @@ namespace User_Form
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Registration());
+            Application.Run(new Form1());
         }
     }
 }

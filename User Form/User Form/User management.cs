@@ -16,5 +16,10 @@ namespace User_Form
         {
             InitializeComponent();
         }
+
+        private void AddUser(object sender, EventArgs e)
+        {
+            new Registration().Show();
+        }
     }
 }

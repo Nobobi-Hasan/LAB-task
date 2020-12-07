@@ -91,12 +91,13 @@
             // 
             this.buttonLogin.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.Location = new System.Drawing.Point(271, 217);
+            this.buttonLogin.Location = new System.Drawing.Point(224, 232);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(153, 34);
             this.buttonLogin.TabIndex = 5;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.Authenticate);
             // 
             // Form1
             // 

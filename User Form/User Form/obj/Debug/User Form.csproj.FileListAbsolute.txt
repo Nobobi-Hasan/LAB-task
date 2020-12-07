@@ -9,3 +9,4 @@ C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\obj\Debug\User Form.exe
 C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\obj\Debug\User Form.pdb
 C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\obj\Debug\User_Form.Form1.resources
 C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\obj\Debug\User_Form.Registration.resources
+C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\obj\Debug\User_Form.User_management.resources

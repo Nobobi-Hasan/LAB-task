@@ -30,10 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBoxPro = new System.Windows.Forms.ComboBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.groupBoxGender = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.comboBoxPro = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -54,10 +55,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.rTOutput = new System.Windows.Forms.RichTextBox();
-            this.groupBoxGender = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.groupBoxGender.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -89,24 +89,29 @@
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // comboBoxPro
+            // groupBoxGender
             // 
-            this.comboBoxPro.FormattingEnabled = true;
-            this.comboBoxPro.Location = new System.Drawing.Point(206, 109);
-            this.comboBoxPro.Name = "comboBoxPro";
-            this.comboBoxPro.Size = new System.Drawing.Size(219, 21);
-            this.comboBoxPro.TabIndex = 12;
+            this.groupBoxGender.Controls.Add(this.radioButton1);
+            this.groupBoxGender.Controls.Add(this.radioButton2);
+            this.groupBoxGender.Controls.Add(this.radioButton3);
+            this.groupBoxGender.Location = new System.Drawing.Point(206, 85);
+            this.groupBoxGender.Name = "groupBoxGender";
+            this.groupBoxGender.Size = new System.Drawing.Size(219, 18);
+            this.groupBoxGender.TabIndex = 13;
+            this.groupBoxGender.TabStop = false;
+            this.groupBoxGender.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // radioButton3
+            // radioButton1
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(136, 1);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(51, 17);
-            this.radioButton3.TabIndex = 11;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Other";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(13, 0);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(48, 17);
+            this.radioButton1.TabIndex = 9;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Male";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -119,16 +124,24 @@
             this.radioButton2.Text = "Female";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radioButton3
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(13, 0);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(48, 17);
-            this.radioButton1.TabIndex = 9;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(136, 1);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(51, 17);
+            this.radioButton3.TabIndex = 11;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Other";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // comboBoxPro
+            // 
+            this.comboBoxPro.FormattingEnabled = true;
+            this.comboBoxPro.Location = new System.Drawing.Point(206, 109);
+            this.comboBoxPro.Name = "comboBoxPro";
+            this.comboBoxPro.Size = new System.Drawing.Size(219, 21);
+            this.comboBoxPro.TabIndex = 12;
             // 
             // label6
             // 
@@ -326,18 +339,6 @@
             this.rTOutput.TabIndex = 14;
             this.rTOutput.Text = "";
             // 
-            // groupBoxGender
-            // 
-            this.groupBoxGender.Controls.Add(this.radioButton1);
-            this.groupBoxGender.Controls.Add(this.radioButton2);
-            this.groupBoxGender.Controls.Add(this.radioButton3);
-            this.groupBoxGender.Location = new System.Drawing.Point(206, 85);
-            this.groupBoxGender.Name = "groupBoxGender";
-            this.groupBoxGender.Size = new System.Drawing.Size(219, 18);
-            this.groupBoxGender.TabIndex = 13;
-            this.groupBoxGender.TabStop = false;
-            this.groupBoxGender.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,10 +353,10 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.groupBoxGender.ResumeLayout(false);
             this.groupBoxGender.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

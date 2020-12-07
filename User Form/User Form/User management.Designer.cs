@@ -54,6 +54,7 @@
             this.buttonAddUser.TabIndex = 44;
             this.buttonAddUser.Text = "Add User";
             this.buttonAddUser.UseVisualStyleBackColor = false;
+            this.buttonAddUser.Click += new System.EventHandler(this.AddUser);
             // 
             // labelReg
             // 
