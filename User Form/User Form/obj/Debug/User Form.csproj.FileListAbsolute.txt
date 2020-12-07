@@ -1,0 +1,11 @@
+C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\bin\Debug\User Form.exe.config
+C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\bin\Debug\User Form.exe
+C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\bin\Debug\User Form.pdb
+C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\obj\Debug\User Form.csprojAssemblyReference.cache
+C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\obj\Debug\User_Form.Properties.Resources.resources
+C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\obj\Debug\User Form.csproj.GenerateResource.cache
+C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\obj\Debug\User Form.csproj.CoreCompileInputs.cache
+C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\obj\Debug\User Form.exe
+C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\obj\Debug\User Form.pdb
+C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\obj\Debug\User_Form.Form1.resources
+C:\Users\Arosh\Desktop\OOP2\lab\User Form\User Form\obj\Debug\User_Form.Registration.resources

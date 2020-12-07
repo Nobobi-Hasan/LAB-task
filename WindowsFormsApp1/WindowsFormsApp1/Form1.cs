@@ -1,0 +1,60 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnClicked(object sender, EventArgs e)
+        {
+            string name = textBoxName.Text;
+            string mobile = textBoxMbl.Text;
+
+
+
+            string orgName = textBoxOrg.Text;
+            string orgAddress = textBoxOrgAdd.Text;
+
+
+            string output = String.Format("Name: {0} \nMobile: {1}\nOrganisation Name: {2}\nOrganisation Address: {3}",name, mobile, orgName, orgAddress);
+            rTOutput.Text = output;
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
